@@ -1,11 +1,12 @@
 # Maintainer: Giovanni Ivan Alberotanza <ivan81@disroot.org> 
+# Committer: Giovanni Ivan Alberotanza <ivan81@disroot.org> 
 
 pkgname=betterbird-bin 
 _pkgname=betterbird 
 pkgdesc="Betterbird is a fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will." 
-pkgrel=2 
-pkgver=115.12.0 
-_pkgsubver=29 
+pkgrel=1 
+pkgver=115.13.0 
+_pkgsubver=30 
 arch=('amd64') 
 url="https://www.betterbird.eu/index.html" 
 license=('MPL2') 
