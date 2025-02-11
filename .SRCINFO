@@ -1,5 +1,5 @@
 pkgbase = wine-tkg-staging-bin
-	pkgdesc = A compatibility layer for running Windows programs (WOW64 with TkG-Staging patches)
+	pkgdesc = A compatibility layer for running Windows programs (with TkG-Staging patches and multilib support)
 	pkgver = 10.0
 	pkgrel = 1
 	url = https://github.com/Kron4ek/Wine-Builds
