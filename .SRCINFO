@@ -1,6 +1,6 @@
 pkgbase = wine-tkg-staging-bin
 	pkgdesc = A compatibility layer for running Windows programs (with TkG-Staging patches and multilib support)
-	pkgver = 10.0
+	pkgver = 10.1
 	pkgrel = 1
 	url = https://github.com/Kron4ek/Wine-Builds
 	arch = x86_64
@@ -27,10 +27,10 @@ pkgbase = wine-tkg-staging-bin
 	depends = wayland
 	depends = desktop-file-utils
 	depends = libgphoto2
-	provides = wine=10.0
-	provides = wine-staging=10.0
+	provides = wine=10.1
+	provides = wine-staging=10.1
 	conflicts = wine
-	source = https://github.com/Kron4ek/Wine-Builds/releases/download/10.0/wine-10.0-staging-tkg-amd64.tar.xz
-	sha256sums = 83d4e34d0ee7f1870e915ea6d0cbb6566c39b709748a1ff44a7389bd88f18126
+	source = https://github.com/Kron4ek/Wine-Builds/releases/download/10.1/wine-10.1-staging-tkg-amd64.tar.xz
+	sha256sums = 5e2c914c292cb70137cdee37af0fb3accbcbe82f7c00016e1eae293905617f54
 
 pkgname = wine-tkg-staging-bin
