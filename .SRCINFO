@@ -1,7 +1,7 @@
 pkgbase = wine-tkg-staging-bin
 	pkgdesc = A compatibility layer for running Windows programs (with TkG-Staging patches and multilib support)
 	pkgver = 10.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Kron4ek/Wine-Builds
 	arch = x86_64
 	license = LGPL-2.1-or-later
@@ -31,6 +31,6 @@ pkgbase = wine-tkg-staging-bin
 	provides = wine-staging=10.2
 	conflicts = wine
 	source = https://github.com/Kron4ek/Wine-Builds/releases/download/10.2/wine-10.2-staging-tkg-amd64.tar.xz
-	sha256sums = 5e2c914c292cb70137cdee37af0fb3accbcbe82f7c00016e1eae293905617f54
+	sha256sums = 0a045fc8ec4ba5c2e69742cbc615fbcc91ed626a8983189e3e7b3c90ec9b34fd
 
 pkgname = wine-tkg-staging-bin
