@@ -1,6 +1,6 @@
 # Maintainer: Victor "psygreg" Gregory <psygreg_at_pm_dot_me>
 pkgname="wine-tkg-staging-bin"
-pkgver=10.3
+pkgver=10.4
 pkgrel=1
 pkgdesc="A compatibility layer for running Windows programs (with TkG-Staging patches and multilib support)"
 url="https://github.com/Kron4ek/Wine-Builds"
@@ -13,7 +13,7 @@ provides=(
 )
 conflicts=("wine")
 source=("https://github.com/Kron4ek/Wine-Builds/releases/download/${pkgver}/wine-${pkgver}-staging-tkg-amd64.tar.xz")
-sha256sums=('f9d1e29455e3995eb44c4788f04129b94d43c2c4cafa2b61f1ac791dc70f4569')
+sha256sums=('3216678cf4e5202d16a469aa71d4f346a2c57e85ae256df2d71e726c182c2142')
 
 package() {
 
