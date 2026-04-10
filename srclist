@@ -1,10 +1,26 @@
 ### Auto-generated for pacstall-programs
 ### DO NOT EDIT. Use scripts/srcinfo.sh to build.
 ---
+pkgbase = betterbird-bin
+	pkgver = 140.9.0esr
+	pkgdesc = Fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will
+	url = https://www.betterbird.eu/index.html
+	arch = x86_64
+	depends = libdbus-glib-1-2
+	depends = hunspell
+	maintainer = tranquil <tranquiltr0@proton.me>
+	repology = project: betterbird
+	source = https://www.betterbird.eu/downloads/LinuxArchive/betterbird-140.9.0esr-bb20.en-US.linux-x86_64.tar.xz
+	source = eu.betterbird.Betterbird.desktop
+	sha256sums = 62d040cb5bf3e7d35ece4d26700f9324f3e17367648421e5e177c7d19a393024
+	sha256sums = bce809385dc48951ca6309776ed8fe5213ebbce301a790349172a799d8987151
+
+pkgname = betterbird-bin
+---
 pkgbase = wine-tkg-staging-wow64-bin
-	pkgdesc = A compatibility layer for running Windows programs (WOW64 with TkG-Staging patches)
-	pkgver = 11.2
+	pkgver = 11.6
 	pkgrel = 1
+	pkgdesc = A compatibility layer for running Windows programs (WOW64 with TkG-Staging patches)
 	url = https://github.com/Kron4ek/Wine-Builds
 	arch = amd64
 	depends = libasound2t64
@@ -34,9 +50,9 @@ pkgbase = wine-tkg-staging-wow64-bin
 	depends = libasound2-plugins
 	depends = libncurses6 | libncurses5 | libncurses
 	conflicts = wine
-	provides = wine=11.2
-	provides = wine-staging=11.2
-	provides = wine-wow64=11.2
+	provides = wine=11.6
+	provides = wine-staging=11.6
+	provides = wine-wow64=11.6
 	recommends = libcairo2
 	recommends = libcap2-bin
 	recommends = libcups2
@@ -66,7 +82,7 @@ pkgbase = wine-tkg-staging-wow64-bin
 	license = LGPL-2.1-or-later
 	maintainer = Victor Itkin <635926+vitkin@users.noreply.github.com>
 	repology = project: wine-tkg-staging-wow64-bin
-	source = https://github.com/Kron4ek/Wine-Builds/releases/download/11.2/wine-11.2-staging-tkg-amd64-wow64.tar.xz
-	sha256sums = 869dc1039a03f845116cf1134e1d69f1947df7f48d5542cd259452708c935e1c
+	source = https://github.com/Kron4ek/Wine-Builds/releases/download/11.6/wine-11.6-staging-tkg-amd64-wow64.tar.xz
+	sha256sums = ca33021ec5b42ebc8e2b610f07bf2ce39beebc67a60a22eb305923b309401326
 
 pkgname = wine-tkg-staging-wow64-bin

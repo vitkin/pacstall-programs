@@ -1,4 +1,8 @@
+[submodule "packages/betterbird-bin"]
+	path = packages/betterbird-bin
+	url = ../pacstall.betterbird-bin.git
+	branch = main
 [submodule "packages/wine-tkg-staging-wow64-bin"]
 	path = packages/wine-tkg-staging-wow64-bin
 	url = ../pacstall.wine-tkg-staging-wow64-bin.git
-	branch = origin/main
+	branch = main
