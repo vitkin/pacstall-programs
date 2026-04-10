@@ -1,0 +1,4 @@
+[submodule "packages/wine-tkg-staging-wow64-bin"]
+	path = packages/wine-tkg-staging-wow64-bin
+	url = ../pacstall.wine-tkg-staging-wow64-bin.git
+	branch = origin/main
