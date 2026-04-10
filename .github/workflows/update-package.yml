@@ -1,0 +1,45 @@
+name: Auto-Update Betterbird
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run package updater
+        run: |
+          chmod +x update-package.sh
+          ./update-package.sh
+
+      - name: Verify whether pacscript changed
+        id: verify_diff
+        run: |
+          if git diff --quiet betterbird-bin.pacscript; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Update detected."
+          fi
+
+      - name: Commit and push changes
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          NEW_VER=$(grep '^pkgver=' betterbird-bin.pacscript | head -n1 | cut -d'"' -f2)
+          NEW_BUILD=$(grep '^_build=' betterbird-bin.pacscript | head -n1 | cut -d'=' -f2)
+
+          git add betterbird-bin.pacscript
+          git commit -m "update: betterbird to ${NEW_VER}-${NEW_BUILD}"
+          git push
