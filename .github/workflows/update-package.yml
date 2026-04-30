@@ -41,5 +41,5 @@ jobs:
           NEW_BUILD=$(grep '^_build=' betterbird-bin.pacscript | head -n1 | cut -d'=' -f2)
 
           git add betterbird-bin.pacscript
-          git commit -m "update: betterbird to ${NEW_VER}-${NEW_BUILD}"
+          git commit -m "update: bump to ${NEW_VER}-${NEW_BUILD}"
           git push
